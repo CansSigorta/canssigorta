@@ -24,7 +24,7 @@
   header{position:sticky;top:0;z-index:50;background:rgba(11,11,12,.7);backdrop-filter:blur(6px);border-bottom:1px solid #1c1e22}
   .nav{display:flex;align-items:center;justify-content:space-between}
   .brand{display:flex;align-items:center;gap:12px}
-  .brand img{height:40px;width:40px;object-fit:contain; display:block}
+  .brand img{height:40px;width:40px;object-fit:contain;display:block}
   .brand .word{font-weight:800;letter-spacing:.5px}
   .menu a{margin-left:18px;text-decoration:none;color:var(--text);font-weight:600;opacity:.9}
   .menu a:hover{opacity:1}
@@ -33,4 +33,34 @@
   .chip{display:inline-block;border:1px solid #2a2d33;border-radius:999px;padding:8px 14px;font-size:13px;color:var(--muted)}
   h1{font-size:44px;line-height:1.1;margin:14px 0 10px}
   .sub{color:var(--muted);font-size:18px;max-width:760px;margin:0 auto 22px}
-  .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap
+  .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <img src="assets/logo_cans_only.png" alt="CANS Sigorta Logo">
+      <span class="word">CANS SİGORTA</span>
+    </div>
+    <div class="menu">
+      <a href="#hizmetler">Hizmetler</a>
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#iletisim">İletişim</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero container">
+  <span class="chip">AgeSa Yetkili Acentesi</span>
+  <h1>Sigortada Güvenin Adresi</h1>
+  <p class="sub">Bireysel emeklilik, hayat, trafik, kasko, DASK ve sağlık sigortasında en iyi çözümler.</p>
+  <div class="cta">
+    <a href="#iletisim" class="btn">Teklif Al</a>
+    <a href="#hizmetler" class="btn">Hizmetlerimizi Gör</a>
+  </div>
+</section>
+
+</body>
+</html>
