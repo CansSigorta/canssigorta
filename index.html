@@ -3,79 +3,44 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CANS Sigorta | Emeklilik & Hayat • Elementer Sigorta</title>
-<meta name="description" content="CANS Sigorta: Birçok sigorta şirketiyle çalışıyoruz. Emeklilik & Hayat (BES, Hayat) ve Elementer (Trafik, Kasko, Konut/DASK, Sağlık) ürünlerinde hızlı, şeffaf, uygun çözümler.">
+<title>CANS Sigorta | Tüm Sigorta Şirketleriyle Çalışıyoruz</title>
+<meta name="description" content="Bireysel Emeklilik, Hayat Sigortası, Trafik, Kasko, DASK, Sağlık ve tüm elementer sigorta branşlarında profesyonel çözümler.">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --brand:#ff6a00; --brandDark:#e85f00;
-    --bg:#ffffff; --bgSoft:#f6f7f9; --stroke:#e6e8ec;
-    --text:#1f2328; --muted:#6c7583; --ok:#27ae60;
+    --brand:#ff6a00;
+    --bg:#0b0b0c;
+    --card:#121316;
+    --text:#e7e9ee;
+    --muted:#9aa3b2;
+    --accent:#ffffff;
   }
-  *{box-sizing:border-box} html,body{margin:0}
+  *{box-sizing:border-box} html,body{margin:0;padding:0}
   body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
-  a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
-  .container{max-width:1160px;margin:0 auto;padding:20px}
-
-  /* Header */
-  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:blur(6px);border-bottom:1px solid var(--stroke)}
-  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
-  .brand{display:flex;align-items:center;gap:10px}
-  .brand img{height:40px;width:40px;object-fit:contain}
-  .word{font-weight:800;letter-spacing:.3px}
-  .menu{display:flex;gap:20px;flex-wrap:wrap}
-  .menu a{font-weight:600;color:#3b4048}
-  .menu a:hover{color:var(--brand)}
-  .ctaTop{display:flex;gap:10px;flex-wrap:wrap}
-  .btn{display:inline-block;padding:10px 16px;border-radius:10px;font-weight:700;border:1px solid var(--stroke);background:#fff}
-  .btn-primary{background:var(--brand);border-color:var(--brand);color:#fff}
-  .btn-primary:hover{background:var(--brandDark)}
-  .btn-ghost{background:#fff}
-
-  /* Hero */
-  .hero{background:linear-gradient(180deg,#fff, var(--bgSoft));padding:56px 0 32px;border-bottom:1px solid var(--stroke)}
-  .chip{display:inline-block;border:1px solid var(--stroke);background:#fff;border-radius:999px;padding:8px 14px;font-size:13px;color:var(--muted)}
-  h1{font-size:44px;line-height:1.1;margin:14px 0 10px}
-  .sub{color:var(--muted);font-size:18px;max-width:760px;margin:0 0 20px}
-  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
-
-  /* Sections */
-  .section{padding:40px 0}
-  h2{font-size:28px;margin:0 0 14px}
-  .grid{display:grid;gap:14px;grid-template-columns:repeat(3,minmax(0,1fr))}
-  .card{background:#fff;border:1px solid var(--stroke);border-radius:14px;padding:18px}
-  .muted{color:var(--muted)}
-
-  /* Tabs (Emeklilik/Hayat vs Elementer) */
-  .tabs{display:flex;gap:10px;margin:8px 0 18px}
-  .tab{padding:10px 14px;border:1px solid var(--stroke);border-radius:999px;background:#fff;cursor:pointer;font-weight:600}
-  .tab.active{background:var(--brand);border-color:var(--brand);color:#fff}
-  .prodGrid{display:grid;gap:12px;grid-template-columns:repeat(3,minmax(0,1fr))}
-
-  /* Lead form */
-  .lead{display:grid;gap:12px;grid-template-columns:1fr 1fr 1fr;background:#fff;border:1px solid var(--stroke);border-radius:14px;padding:18px}
-  .lead input,.lead select,.lead button{height:44px;border:1px solid var(--stroke);border-radius:10px;padding:0 12px;font-size:14px}
-  .lead button{background:var(--brand);border-color:var(--brand);color:#fff;font-weight:800;cursor:pointer}
-  .lead button:hover{background:var(--brandDark)}
-
-  /* Badges */
-  .badges{display:flex;gap:10px;flex-wrap:wrap}
-  .badge{border:1px solid var(--stroke);border-radius:999px;padding:8px 12px;background:#fff;font-size:13px;color:#3b4048}
-
-  /* Footer */
-  footer{background:var(--bgSoft);border-top:1px solid var(--stroke);padding:22px 0;color:#707784;font-size:13px}
-
-  /* WhatsApp FAB */
-  .fab{position:fixed;right:18px;bottom:18px;height:54px;border-radius:999px;background:#25D366;color:#fff;display:flex;align-items:center;gap:10px;padding:0 16px;font-weight:800;box-shadow:0 6px 24px rgba(0,0,0,.14)}
-  .fab:hover{filter:brightness(1.05)}
-
-  @media (max-width:980px){
-    h1{font-size:36px}
-    .grid,.prodGrid{grid-template-columns:1fr}
-    .lead{grid-template-columns:1fr}
-    .menu{gap:12px}
-  }
+  a{color:inherit;text-decoration:none}
+  .container{max-width:1200px;margin:0 auto;padding:24px}
+  header{position:sticky;top:0;z-index:50;background:rgba(11,11,12,.8);backdrop-filter:blur(6px);border-bottom:1px solid #1c1e22}
+  .nav{display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand img{height:40px;width:40px;object-fit:contain;display:block}
+  .brand .word{font-weight:800;font-size:20px}
+  .menu a{margin-left:18px;font-weight:600;opacity:.9}
+  .menu a:hover{opacity:1;color:var(--brand)}
+  .hero{padding:60px 0;text-align:center}
+  .hero h1{font-size:42px;line-height:1.2;margin-bottom:16px}
+  .hero p{color:var(--muted);font-size:18px;max-width:700px;margin:0 auto 20px}
+  .cta-btn{background:var(--brand);color:#fff;padding:14px 28px;border-radius:8px;font-weight:600;font-size:16px;display:inline-block}
+  .cta-btn:hover{opacity:0.9}
+  .section{padding:50px 0}
+  .section h2{text-align:center;font-size:32px;margin-bottom:40px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+  .card{background:var(--card);padding:24px;border-radius:12px;text-align:center;transition:0.3s}
+  .card:hover{transform:translateY(-4px);box-shadow:0 4px 12px rgba(0,0,0,0.4)}
+  .card h3{margin-bottom:12px;color:var(--brand)}
+  .card p{color:var(--muted);font-size:15px}
+  footer{background:#111114;padding:30px 0;text-align:center;color:var(--muted);font-size:14px;margin-top:40px}
+  .contact{margin-top:20px;font-size:16px;color:var(--accent)}
 </style>
 </head>
 <body>
@@ -83,191 +48,81 @@
 <header>
   <div class="container nav">
     <div class="brand">
-      <img src="assets/logo_cans_only.png" alt="CANS Sigorta Logo">
-      <span class="word">CANS SİGORTA</span>
+      <img src="logo.png" alt="CANS Sigorta Logo">
+      <div class="word">CANS Sigorta</div>
     </div>
-    <nav class="menu">
-      <a href="#urunler">Ürünler</a>
-      <a href="#neden">Neden Biz</a>
-      <a href="#teklif">Teklif Al</a>
+    <div class="menu">
+      <a href="#emeklilik">Emeklilik & Hayat</a>
+      <a href="#elementer">Elementer Sigortalar</a>
       <a href="#iletisim">İletişim</a>
-    </nav>
-    <div class="ctaTop">
-      <a class="btn btn-primary" href="#teklif">Teklif Al</a>
-      <a class="btn btn-ghost" href="tel:+905323510731">Ara</a>
     </div>
   </div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
   <div class="container">
-    <span class="chip">Birçok sigorta şirketiyle çalışıyoruz</span>
-    <h1>Sigortada Güven, Tek Adreste</h1>
-    <p class="sub">Emeklilik & Hayat ile Elementer ürünlerde şeffaf, hızlı ve uygun fiyatlı çözümler sunuyoruz. Teklifleri sizin için karşılaştırıp en iyi seçeneği aynı gün içinde hazırlıyoruz.</p>
-    <div class="cta">
-      <a class="btn btn-primary" href="#teklif">Hızlı Teklif Formu</a>
-      <a class="btn" href="https://wa.me/905323510731?text=Merhaba%2C%20CANS%20Sigorta%27dan%20teklif%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp (0532 351 07 31)</a>
-    </div>
+    <h1>Tüm Sigorta Şirketleriyle Çalışıyoruz</h1>
+    <p>Bireysel emeklilikten trafik sigortasına, tüm branşlarda yanınızdayız. Profesyonel danışmanlık ile en uygun çözümleri sunuyoruz.</p>
+    <a href="#iletisim" class="cta-btn">Hemen İletişime Geç</a>
   </div>
 </section>
 
-<!-- ÜRÜNLER -->
-<section id="urunler" class="section">
+<section id="emeklilik" class="section">
   <div class="container">
-    <h2>Ürün Grupları</h2>
-    <div class="tabs">
-      <button class="tab active" data-tab="hayat">Emeklilik & Hayat</button>
-      <button class="tab" data-tab="elementer">Elementer</button>
-    </div>
-
-    <div id="hayat" class="prodGrid">
-      <div class="card"><strong>BES</strong><div class="muted">%30 devlet katkısı ile birikim.</div></div>
-      <div class="card"><strong>Hayat Sigortası</strong><div class="muted">Aileniz için finansal güvence.</div></div>
-      <div class="card"><strong>Kredi Hayat</strong><div class="muted">Kredi borçları için koruma.</div></div>
-    </div>
-
-    <div id="elementer" class="prodGrid" style="display:none">
-      <div class="card"><strong>Zorunlu Trafik</strong><div class="muted">Yasal zorunluluk; uygun primlerle güvence.</div></div>
-      <div class="card"><strong>Kasko</strong><div class="muted">Çarpışma, hırsızlık, doğal afet vb.</div></div>
-      <div class="card"><strong>Konut / DASK</strong><div class="muted">Deprem ve konut güvencesi.</div></div>
-      <div class="card"><strong>Sağlık</strong><div class="muted">Özel hastanelerde kapsamlı tedavi.</div></div>
-      <div class="card"><strong>İşyeri</strong><div class="muted">İşletme varlıkları için koruma.</div></div>
-      <div class="card"><strong>Yol Yardım</strong><div class="muted">7/24 asistans hizmetleri.</div></div>
-    </div>
-
-    <div style="margin-top:16px">
-      <div class="muted">Çalıştığımız bazı şirketler:</div>
-      <div class="badges" aria-label="Anlaşmalı şirket badge listesi">
-        <span class="badge">Allianz</span><span class="badge">HDI</span><span class="badge">Anadolu Hayat</span><span class="badge">AgeSA</span><span class="badge">AXA</span><span class="badge">Mapfre</span><span class="badge">Sompo</span>
+    <h2>Bireysel Emeklilik & Hayat Sigortası</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Bireysel Emeklilik Sistemi</h3>
+        <p>Geleceğinizi güvence altına alın, devlet katkısından faydalanın.</p>
+      </div>
+      <div class="card">
+        <h3>Hayat Sigortası</h3>
+        <p>Sevdiklerinizi her koşulda koruma altına alın.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- NEDEN BİZ -->
-<section id="neden" class="section" style="background:var(--bgSoft);border-top:1px solid var(--stroke);border-bottom:1px solid var(--stroke)">
+<section id="elementer" class="section">
   <div class="container">
-    <h2>Neden CANS Sigorta?</h2>
-    <div class="grid">
-      <div class="card"><strong>Çoklu Şirket Karşılaştırma</strong><div class="muted">Birçok sigorta şirketinden aynı anda teklif toplar, en uygun teminat/fiyat dengesini sunarız.</div></div>
-      <div class="card"><strong>Hızlı Poliçe</strong><div class="muted">Belgeler tamamlandığında aynı gün poliçe.</div></div>
-      <div class="card"><strong>Şeffaf Süreç</strong><div class="muted">Teminatları net anlatır, sürpriz maliyet bırakmayız.</div></div>
+    <h2>Elementer Sigortalar</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Trafik Sigortası</h3>
+        <p>Zorunlu trafik sigortasında en uygun teklifleri sunuyoruz.</p>
+      </div>
+      <div class="card">
+        <h3>Kasko</h3>
+        <p>Aracınızı kaza, hırsızlık ve diğer risklere karşı güvence altına alın.</p>
+      </div>
+      <div class="card">
+        <h3>DASK</h3>
+        <p>Zorunlu deprem sigortası ile evinizi koruyun.</p>
+      </div>
+      <div class="card">
+        <h3>Sağlık Sigortası</h3>
+        <p>Kendiniz ve aileniz için kapsamlı sağlık güvencesi.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- TEKLİF FORMU -->
-<section id="teklif" class="section">
-  <div class="container">
-    <h2>Hızlı Teklif Formu</h2>
-    <form class="lead" onsubmit="return goWhatsApp(event)">
-      <input id="ad" type="text" placeholder="Ad Soyad" required>
-      <input id="tel" type="tel" placeholder="Telefon" required>
-      <select id="grup" required>
-        <option value="" disabled selected>Ürün Grubu Seçin</option>
-        <option>Emeklilik & Hayat</option>
-        <option>Elementer</option>
-      </select>
-      <select id="urun" required>
-        <option value="" disabled selected>Ürün Türü</option>
-        <option data-g="Emeklilik & Hayat">BES</option>
-        <option data-g="Emeklilik & Hayat">Hayat</option>
-        <option data-g="Emeklilik & Hayat">Kredi Hayat</option>
-        <option data-g="Elementer">Zorunlu Trafik</option>
-        <option data-g="Elementer">Kasko</option>
-        <option data-g="Elementer">Konut / DASK</option>
-        <option data-g="Elementer">Sağlık</option>
-        <option data-g="Elementer">İşyeri</option>
-      </select>
-      <input id="not" type="text" placeholder="Plaka / Not (opsiyonel)">
-      <button type="submit">WhatsApp’tan Gönder</button>
-    </form>
-    <p class="muted" style="margin-top:10px">
-      Form çalışmazsa: <a href="mailto:can@canssigorta.com">can@canssigorta.com</a> •
-      Tel: <a href="tel:+905323510731">+90 532 351 0731</a> / <a href="tel:+905522099443">+90 552 209 9443</a>
-    </p>
-  </div>
-</section>
-
-<!-- İLETİŞİM -->
-<section id="iletisim" class="section" style="background:var(--bgSoft);border-top:1px solid var(--stroke)">
-  <div class="container">
+<section id="iletisim" class="section">
+  <div class="container" style="text-align:center">
     <h2>İletişim</h2>
-    <div class="grid">
-      <div class="card">
-        <div class="muted">Telefonlar</div>
-        <div><a href="tel:+905323510731">+90 532 351 0731</a></div>
-        <div><a href="tel:+905522099443">+90 552 209 9443</a></div>
-        <div class="muted" style="margin-top:10px">E-posta</div>
-        <div><a href="mailto:can@canssigorta.com">can@canssigorta.com</a></div>
-        <div class="muted" style="margin-top:10px">Adres</div>
-        <div>İstanbul</div>
-      </div>
-      <div class="card">
-        <div class="muted">Destek</div>
-        <div>Hasar ve talep süreçlerinde yanınızdayız. WhatsApp’tan yazabilirsiniz.</div>
-        <div style="margin-top:12px">
-          <a class="btn btn-primary" href="https://wa.me/905323510731" target="_blank" rel="noopener">WhatsApp (0532 351 07 31)</a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="muted">Harita / Form</div>
-        <div>Google Harita veya Google Form gömmek isterseniz buraya eklenir.</div>
-      </div>
+    <div class="contact">
+      📞 +90 532 351 0731<br>
+      📞 +90 552 209 9443<br>
+      📧 <a href="mailto:can@canssigorta.com">can@canssigorta.com</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="container" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;">
-    <div>© <span id="yil"></span> CANS Sigorta</div>
-    <div><a href="#">KVKK & Aydınlatma</a> • <a href="#">Çerez Politikası</a></div>
+  <div class="container">
+    © 2025 CANS Sigorta — Tüm hakları saklıdır.
   </div>
 </footer>
 
-<a class="fab" href="https://wa.me/905323510731?text=Merhaba%2C%20sigorta%20teklifi%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp">
-  💬 WhatsApp
-</a>
-
-<script>
-  // Yıl
-  document.getElementById('yil').textContent = new Date().getFullYear();
-
-  // Tabs
-  const tabs = document.querySelectorAll('.tab');
-  function showTab(id){
-    document.getElementById('hayat').style.display = id==='hayat' ? 'grid' : 'none';
-    document.getElementById('elementer').style.display = id==='elementer' ? 'grid' : 'none';
-  }
-  tabs.forEach(t => t.addEventListener('click', () => {
-    tabs.forEach(x => x.classList.remove('active'));
-    t.classList.add('active'); showTab(t.dataset.tab);
-  }));
-  showTab('hayat');
-
-  // Ürünleri gruba göre filtrele
-  const grupSel = document.getElementById('grup');
-  const urunSel = document.getElementById('urun');
-  const allOptions = Array.from(urunSel.querySelectorAll('option[data-g]'));
-  grupSel.addEventListener('change', () => {
-    const g = grupSel.value;
-    urunSel.innerHTML = '<option value="" disabled selected>Ürün Türü</option>';
-    allOptions.filter(o=>o.dataset.g===g).forEach(o=>urunSel.appendChild(o.cloneNode(true)));
-  });
-
-  // WhatsApp yönlendirme (birincil numara 0532 351 07 31)
-  function goWhatsApp(e){
-    e.preventDefault();
-    const ad = document.getElementById('ad').value.trim();
-    const tel= document.getElementById('tel').value.trim();
-    const g  = document.getElementById('grup').value || '';
-    const u  = document.getElementById('urun').value || '';
-    const n  = document.getElementById('not').value.trim();
-    const msg = `Merhaba, teklif almak istiyorum.%0AAd: ${ad}%0ATel: ${tel}%0AÜrün Grubu: ${g}%0AÜrün: ${u}%0ANot: ${n}`;
-    window.open(`https://wa.me/905323510731?text=${msg}`,'_blank');
-    return false;
-  }
-</script>
 </body>
 </html>
