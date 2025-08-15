@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Çerez Politikası | CANS Sigorta</title>
+<meta name="description" content="CANS Sigorta Çerez Politikası. Zorunlu, performans, işlevsel ve hedefleme çerezlerine ilişkin bilgiler.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#ffffff;--text:#1f2328;--muted:#6c7583;--stroke:#e6e8ec;--brand:#ff6a00}
+  *{box-sizing:border-box} html,body{margin:0}
+  body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+  .container{max-width:900px;margin:0 auto;padding:24px}
+  header{border-bottom:1px solid var(--stroke);padding:14px 0;margin-bottom:16px}
+  a{color:var(--brand);text-decoration:none}
+  h1{font-size:28px;margin:10px 0}
+  h2{font-size:20px;margin:22px 0 10px}
+  p,li{line-height:1.6}
+  .muted{color:var(--muted)}
+  footer{border-top:1px solid var(--stroke);padding:16px 0;margin-top:22px;color:#707784;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+  <div class="container"><a href="index.html">← Ana sayfa</a></div>
+</header>
+<main class="container">
+  <h1>Çerez Politikası</h1>
+  <p>Bu politika, <strong>canssigorta.com</strong> alan adı üzerinden yürütülen internet sitemizde kullanılan çerezler hakkında bilgi vermek için hazırlanmıştır.</p>
+
+  <h2>1. Çerez Nedir?</h2>
+  <p>Çerezler, ziyaret ettiğiniz web siteleri tarafından tarayıcınıza kaydedilen küçük metin dosyalarıdır.</p>
+
+  <h2>2. Hangi Çerezleri Kullanıyoruz?</h2>
+  <ul>
+    <li><strong>Zorunlu Çerezler:</strong> Sitenin temel işlevleri için gereklidir.</li>
+    <li><strong>Performans/Analitik Çerezleri:</strong> Trafik ve kullanım analizi için kullanılır.</li>
+    <li><strong>İşlevsel Çerezler:</strong> Tercihlerinizi hatırlamak için kullanılır.</li>
+    <li><strong>Hedefleme/Reklam Çerezleri:</strong> İlgi alanına göre içerik göstermek için kullanılabilir.</li>
+  </ul>
+
+  <h2>3. Çerezleri Nasıl Yönetebilirsiniz?</h2>
+  <p>Tarayıcınızın ayarlarından çerezleri silebilir veya engelleyebilirsiniz. Bazı çerezleri devre dışı bırakmanız site deneyiminizi etkileyebilir.</p>
+
+  <h2>4. İletişim</h2>
+  <p>Çerezler hakkında sorularınız için: <a href="mailto:can@canssigorta.com">can@canssigorta.com</a></p>
+
+  <p class="muted">Metin örnektir; gerçek kullanım ve analitik çerezleri varsa ayrıntıları ekleyiniz.</p>
+</main>
+<footer>
+  <div class="container">© <span id="yil"></span> CANS Sigorta</div>
+</footer>
+<script>document.getElementById('yil').textContent=new Date().getFullYear()</script>
+</body>
+</html>
