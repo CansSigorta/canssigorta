@@ -8,7 +8,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
-<!-- Favicon + OG + GA (ortak head) BURAYA EKLE -->
+
+<!-- OG + Favicon (varsa) -->
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta property="og:title" content="CANS Sigorta | Geleceğinizi Finanse Edelim">
+<meta property="og:description" content="BES, Hayat, Trafik, Kasko, DASK, Sağlık. Karşılaştırmalı teklif, hızlı poliçe ve şeffaf danışmanlık.">
+<meta property="og:url" content="https://www.canssigorta.com/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.canssigorta.com/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
 
 <!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0RM2J1V0X"></script>
@@ -18,13 +26,13 @@
   gtag('js', new Date());
   gtag('config', 'G-G0RM2J1V0X');
 </script>
-<!-- /Google Analytics 4 -->
-
+<!-- /GA4 -->
 </head>
 <body>
 <header><div class="container nav">
   <div class="brand">
-    <img src="assets/logo.png" alt="CANS Sigorta" onerror="this.remove();document.getElementById('brandText').style.marginLeft='0'">
+    <img src="assets/logo.png" alt="CANS Sigorta" loading="lazy" decoding="async"
+         onerror="this.remove();document.getElementById('brandText').style.marginLeft='0'">
     <div id="brandText" class="word">CANS Sigorta</div>
   </div>
   <div class="menu-toggle" onclick="document.querySelector('.menu').classList.toggle('open')">☰ Menü</div>
@@ -81,41 +89,39 @@
 </div></footer>
 <script>document.getElementById('yil').textContent=new Date().getFullYear()</script>
 
-<!-- WhatsApp FAB -->
+<!-- WhatsApp FAB — 1. hat -->
 <a class="whatsapp-fab" href="https://wa.me/905323510731?text=Merhaba%2C%20CANS%20Sigorta%27dan%20bilgi%20ve%20teklif%20almak%20istiyorum." rel="noopener" aria-label="WhatsApp ile İletişim">
   <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 3C9.372 3 4 8.372 4 15c0 2.12.55 4.12 1.51 5.87L4 29l8.33-1.45A11.88 11.88 0 0 0 16 27c6.628 0 12-5.372 12-12S22.628 3 16 3Z"/><path fill="#25D366" d="M16 5.2c5.4 0 9.8 4.4 9.8 9.8S21.4 24.8 16 24.8c-1.82 0-3.52-.5-4.98-1.37l-.35-.2-4.17.72.74-4.06-.23-.38A9.74 9.74 0 0 1 6.2 15c0-5.4 4.4-9.8 9.8-9.8Z"/></svg>
   WhatsApp
 </a>
 
-<!-- GA4 Event Tracking -->
+<!-- WhatsApp FAB — 2. hat -->
+<a class="whatsapp-fab" style="right:18px; bottom:74px"
+   href="https://wa.me/905522099443?text=Merhaba%2C%20CANS%20Sigorta%27dan%20bilgi%20ve%20teklif%20almak%20istiyorum."
+   rel="noopener" aria-label="WhatsApp 552">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 3C9.372 3 4 8.372 4 15c0 2.12.55 4.12 1.51 5.87L4 29l8.33-1.45A11.88 11.88 0 0 0 16 27c6.628 0 12-5.372 12-12S22.628 3 16 3Z"/><path fill="#25D366" d="M16 5.2c5.4 0 9.8 4.4 9.8 9.8S21.4 24.8 16 24.8c-1.82 0-3.52-.5-4.98-1.37l-.35-.2-4.17.72.74-4.06-.23-.38A9.74 9.74 0 0 1 6.2 15c0-5.4 4.4-9.8 9.8-9.8Z"/></svg>
+  WhatsApp (552)
+</a>
+
+<!-- GA4 Event Tracking (WhatsApp/Telefon/E-posta) -->
 <script>
   document.addEventListener('click', function(e){
-    const a = e.target.closest('a');
-    if(!a) return;
-
-    // WhatsApp
+    const a = e.target.closest('a'); if(!a) return;
     if (a.href.includes('wa.me') || a.href.startsWith('whatsapp://')) {
-      gtag('event', 'whatsapp_click', {
-        link_url: a.href,
-        location: window.location.pathname
-      });
+      gtag('event', 'whatsapp_click', {link_url: a.href, location: window.location.pathname});
     }
-
-    // Telefon
     if (a.href.startsWith('tel:')) {
-      gtag('event', 'phone_click', {
-        phone: a.href.replace('tel:',''),
-        location: window.location.pathname
-      });
+      gtag('event', 'phone_click', {phone: a.href.replace('tel:', ''), location: window.location.pathname});
     }
-
-    // E-posta
     if (a.href.startsWith('mailto:')) {
-      gtag('event', 'email_click', {
-        email: a.href.replace('mailto:',''),
-        location: window.location.pathname
-      });
+      gtag('event', 'email_click', {email: a.href.replace('mailto:', ''), location: window.location.pathname});
     }
+  });
+
+  // Hız: tüm görsellere lazy+async uygula (tek tek düzenlemeye gerek kalmasın)
+  document.querySelectorAll('img').forEach(function(img){
+    if (!img.hasAttribute('loading')) img.setAttribute('loading','lazy');
+    if (!img.hasAttribute('decoding')) img.setAttribute('decoding','async');
   });
 </script>
 </body>
