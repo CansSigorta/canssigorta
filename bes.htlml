@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bireysel Emeklilik Sistemi | CANS Sigorta</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <a href="index.html">CANS Sigorta</a>
+    </div>
+    <nav class="menu">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="bes.html" class="active">Emeklilik &amp; Hayat</a>
+      <a href="hayat.html">Hayat</a>
+      <a href="trafik.html">Trafik</a>
+      <a href="kasko.html">Kasko</a>
+      <a href="dask.html">DASK</a>
+      <a href="saglik.html">Sağlık</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero small">
+  <div class="container">
+    <h1>Bireysel Emeklilik Sistemi</h1>
+    <p>%30 devlet katkısıyla birikimlerinizi büyütün, geleceğinizi güvence altına alın.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Neden BES?</h2>
+    <ul>
+      <li>Yatırdığınız her 100 TL’ye 30 TL devlet katkısı.</li>
+      <li>Esnek ödeme seçenekleri, istediğiniz zaman katkı payı artırıp azaltma imkanı.</li>
+      <li>Profesyonel fon yönetimi ile enflasyona karşı koruma.</li>
+      <li>Uzun vadede emeklilikte ek bir maaş.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Örnek Senaryo</h2>
+    <p>Aylık 1000 TL katkı payı yatıran bir katılımcı, yıllık 12.000 TL birikim yapar.  
+    Devlet katkısı ile bu tutar 15.600 TL olur. Yıllar içinde fon getirileriyle birikiminiz katlanır.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="text-align:center">
+    <h2>Hemen Katılın</h2>
+    <a class="btn btn-primary" href="https://wa.me/905323510731?text=Bireysel%20Emeklilik%20hakkinda%20bilgi%20almak%20istiyorum.">WhatsApp ile Başvuru</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="contact">
+      📞 <a href="tel:+905323510731">+90 532 351 0731</a> | 
+      📞 <a href="tel:+905522099443">+90 552 209 9443</a> | 
+      📧 <a href="mailto:can@canssigorta.com">can@canssigorta.com</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
