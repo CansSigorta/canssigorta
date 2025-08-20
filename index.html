@@ -1,155 +1,110 @@
 <!doctype html>
 <html lang="tr">
 <head>
-<!-- Open Graph Meta Tags -->
-<meta property="og:url" content="https://www.canssigorta.com/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="CANS Sigorta | Geleceğinizi Finanse Edelim">
-<meta property="og:description" content="BES, Hayat, Trafik, Kasko, DASK, Sağlık ve daha fazlası. Karşılaştırmalı teklif, hızlı poliçe ve şeffaf hizmet.">
-<meta property="og:image" content="https://www.canssigorta.com/assets/og-image.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CANS Sigorta | Güvenle Geleceğinizi Sigortalayın</title>
+  <meta name="description" content="CANS Sigorta ile Bireysel Emeklilik, Hayat, Trafik, Kasko, DASK ve Sağlık sigortası çözümleri. Güvenceniz bizde.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/assets/style.css">
 
-<!-- Twitter Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:domain" content="canssigorta.com">
-<meta name="twitter:url" content="https://www.canssigorta.com/">
-<meta name="twitter:title" content="CANS Sigorta | Geleceğinizi Finanse Edelim">
-<meta name="twitter:description" content="BES, Hayat, Trafik, Kasko, DASK, Sağlık ve daha fazlası. Karşılaştırmalı teklif, hızlı poliçe ve şeffaf hizmet.">
-<meta name="twitter:image" content="https://www.canssigorta.com/assets/og-image.jpg">
+  <!-- OG -->
+  <meta property="og:url" content="https://www.canssigorta.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CANS Sigorta | Güvenle Geleceğinizi Sigortalayın">
+  <meta property="og:description" content="CANS Sigorta ile Bireysel Emeklilik, Hayat, Trafik, Kasko, DASK ve Sağlık sigortası çözümleri.">
+  <meta property="og:image" content="https://www.canssigorta.com/assets/og-image.jpg">
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CANS Sigorta | Geleceğinizi Finanse Edelim</title>
-<meta name="description" content="BES, Hayat, Trafik, Kasko, DASK, Sağlık ve daha fazlası. Karşılaştırmalı teklif, hızlı poliçe ve şeffaf danışmanlık.">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
-
-<!-- OG + Favicon (varsa) -->
-<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-<meta property="og:title" content="CANS Sigorta | Geleceğinizi Finanse Edelim">
-<meta property="og:description" content="BES, Hayat, Trafik, Kasko, DASK, Sağlık. Karşılaştırmalı teklif, hızlı poliçe ve şeffaf danışmanlık.">
-<meta property="og:url" content="https://www.canssigorta.com/">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://www.canssigorta.com/assets/og-image.jpg">
-<meta name="twitter:card" content="summary_large_image">
-
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0RM2J1V0X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-G0RM2J1V0X');
-</script>
-<!-- /GA4 -->
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0RM2J1V0X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date()); gtag('config', 'G-G0RM2J1V0X');
+  </script>
 </head>
 <body>
-<header><div class="container nav">
-  <div class="brand">
-    <img src="assets/logo.png" alt="CANS Sigorta" loading="lazy" decoding="async"
-         onerror="this.remove();document.getElementById('brandText').style.marginLeft='0'">
-    <div id="brandText" class="word">CANS Sigorta</div>
+
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <img src="/assets/logo.png" alt="CANS Sigorta" style="height:40px">
+      <div class="word">CANS Sigorta</div>
+    </div>
+    <div class="menu-toggle" onclick="document.querySelector('.menu').classList.toggle('open')">☰ Menü</div>
+    <nav class="menu">
+      <a class="active" href="index.html">Ana Sayfa</a>
+      <a href="bes.html">Bireysel Emeklilik</a>
+      <a href="hayat.html">Hayat</a>
+      <a href="trafik.html">Trafik</a>
+      <a href="kasko.html">Kasko</a>
+      <a href="dask.html">DASK</a>
+      <a href="saglik.html">Sağlık</a>
+      <a href="about.html">Hakkımızda</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
   </div>
-  <div class="menu-toggle" onclick="document.querySelector('.menu').classList.toggle('open')">☰ Menü</div>
-  <nav>
-  <a href="index.html" class="logo">
-    <img src="/assets/logo.png" alt="CANS Sigorta" style="height:40px;">
-    CANS Sigorta
-  </a>
-  <ul>
-    <li><a href="index.html">Ana Sayfa</a></li>
-    <li><a href="bireysel-emeklilik.html">Bireysel Emeklilik</a></li>
-    <li><a href="hayat.html">Hayat</a></li>
-    <li><a href="trafik.html">Trafik</a></li>
-    <li><a href="kasko.html">Kasko</a></li>
-    <li><a href="dask.html">DASK</a></li>
-    <li><a href="saglik.html">Sağlık</a></li>
-    <li><a href="hakkimizda.html">Hakkımızda</a></li>
-    <li><a href="iletisim.html">İletişim</a></li>
-  </ul>
-</nav>
-</div></header>
+</header>
 
-<section class="hero"><div class="container">
-  <h1>Geleceğinizi Finanse Edelim</h1>
-  <p>Emeklilikten sağlığa, araç ve konuta kadar tüm branşlarda; karşılaştırmalı teklifler ve şeffaf danışmanlıkla yanınızdayız.</p>
-  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-    <a class="btn btn-primary" href="https://wa.me/905323510731?text=Merhaba%2C%20CANS%20Sigorta%27dan%20bilgi%20ve%20teklif%20almak%20istiyorum." rel="noopener">Bizimle İletişime Geçin</a>
-    <a class="btn btn-ghost" href="iletisim.html">Tüm İletişim Kanalları</a>
+<section class="hero-banner" style="--hero:url('/assets/hero-main.jpg')">
+  <div class="container">
+    <h1>CANS Sigorta ile Güvenle Geleceğinizi Sigortalayın</h1>
+    <p>Bireysel Emeklilik, Hayat, Trafik, Kasko, DASK ve Sağlık sigortasıyla yanınızdayız.</p>
+    <a href="iletisim.html" class="btn-primary">Hemen Teklif Al</a>
   </div>
-</div></section>
+</section>
 
-<section class="section"><div class="container">
-  <h2>Ürünlerimiz</h2>
-  <div class="cards">
-    <a class="card" href="bes.html"><h3>Bireysel Emeklilik Sistemi</h3><p>%30 devlet katkısı ile birikiminizi büyütün.</p><span class="btn btn-primary">Detay</span></a>
-    <a class="card" href="hayat.html"><h3>Hayat Sigortası</h3><p>Sevdiklerinizi finansal risklere karşı koruyun.</p><span class="btn btn-primary">Detay</span></a>
-    <a class="card" href="trafik.html"><h3>Trafik Sigortası</h3><p>Zorunlu sigortada uygun primler.</p><span class="btn btn-primary">Detay</span></a>
-    <a class="card" href="kasko.html"><h3>Kasko</h3><p>Aracınıza kapsamlı güvence.</p><span class="btn btn-primary">Detay</span></a>
-    <a class="card" href="dask.html"><h3>DASK</h3><p>Deprem sonrası konut güvencesi.</p><span class="btn btn-primary">Detay</span></a>
-    <a class="card" href="saglik.html"><h3>Sağlık Sigortası</h3><p>Özel hastanelerde kapsamlı tedavi.</p><span class="btn btn-primary">Detay</span></a>
+<section class="section reveal">
+  <div class="container">
+    <h2>Neden CANS Sigorta?</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>📈 Güvenilir Hizmet</h3>
+        <p>AgeSa Hayat Emeklilik acentesi olarak güçlü finansal çözümler.</p>
+      </div>
+      <div class="card">
+        <h3>💬 7/24 Destek</h3>
+        <p>Telefon, WhatsApp ve e-posta üzerinden her zaman yanınızdayız.</p>
+      </div>
+      <div class="card">
+        <h3>⚡ Hızlı Teklif</h3>
+        <p>İhtiyacınıza özel en uygun teklifleri dakikalar içinde alın.</p>
+      </div>
+    </div>
   </div>
-</div></section>
+</section>
 
-<section class="section"><div class="container">
-  <h2>Çalıştığımız Kurumlardan Bazıları</h2>
-  <div class="cards" style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr));text-align:center">
-    <div class="card"><strong>Allianz</strong></div>
-    <div class="card"><strong>Anadolu Hayat</strong></div>
-    <div class="card"><strong>HDI</strong></div>
-    <div class="card"><strong>AgeSA</strong></div>
-    <div class="card"><strong>AXA</strong></div>
-    <div class="card"><strong>Mapfre</strong></div>
+<section class="section reveal">
+  <div class="container">
+    <h2>Sigorta Çözümlerimiz</h2>
+    <div class="grid">
+      <a href="bes.html" class="card-link"><div class="card"><h3>Bireysel Emeklilik</h3><p>Geleceğinizi bugünden güvence altına alın.</p></div></a>
+      <a href="hayat.html" class="card-link"><div class="card"><h3>Hayat Sigortası</h3><p>Siz ve sevdikleriniz için güvence.</p></div></a>
+      <a href="trafik.html" class="card-link"><div class="card"><h3>Trafik Sigortası</h3><p>Zorunlu trafik sigortası ile yolda güven.</p></div></a>
+      <a href="kasko.html" class="card-link"><div class="card"><h3>Kasko Sigortası</h3><p>Aracınızı her türlü riske karşı koruyun.</p></div></a>
+      <a href="dask.html" class="card-link"><div class="card"><h3>DASK</h3><p>Depreme karşı güvence sağlayın.</p></div></a>
+      <a href="saglik.html" class="card-link"><div class="card"><h3>Sağlık Sigortası</h3><p>Sağlığınızı güvenceye alın.</p></div></a>
+    </div>
   </div>
-  <p class="muted center" style="margin-top:8px">*Tam liste ve marka logoları yakında.</p>
-</div></section>
+</section>
 
-<footer><div class="container">
-  <div class="contact">📞 <a href="tel:+905323510731">+90 532 351 0731</a> &nbsp; | &nbsp; 📞 <a href="tel:+905522099443">+90 552 209 9443</a> &nbsp; | &nbsp; 📧 <a href="mailto:can@canssigorta.com">can@canssigorta.com</a></div>
-  <div style="margin-top:8px;color:#888">© <span id="yil"></span> CANS Sigorta</div>
-</div></footer>
-<script>document.getElementById('yil').textContent=new Date().getFullYear()</script>
+<footer>
+  <div class="container">
+    <div class="contact">📞 <a href="tel:+905323510731">+90 532 351 0731</a>  |  📞 <a href="tel:+905522099443">+90 552 209 9443</a>  |  📧 <a href="mailto:can@canssigorta.com">can@canssigorta.com</a></div>
+    <div style="margin-top:8px;color:#888">© <span id="yil"></span> CANS Sigorta</div>
+  </div>
+</footer>
 
-<!-- WhatsApp FAB — 1. hat -->
-<a class="whatsapp-fab" href="https://wa.me/905323510731?text=Merhaba%2C%20CANS%20Sigorta%27dan%20bilgi%20ve%20teklif%20almak%20istiyorum." rel="noopener" aria-label="WhatsApp ile İletişim">
-  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 3C9.372 3 4 8.372 4 15c0 2.12.55 4.12 1.51 5.87L4 29l8.33-1.45A11.88 11.88 0 0 0 16 27c6.628 0 12-5.372 12-12S22.628 3 16 3Z"/><path fill="#25D366" d="M16 5.2c5.4 0 9.8 4.4 9.8 9.8S21.4 24.8 16 24.8c-1.82 0-3.52-.5-4.98-1.37l-.35-.2-4.17.72.74-4.06-.23-.38A9.74 9.74 0 0 1 6.2 15c0-5.4 4.4-9.8 9.8-9.8Z"/></svg>
-  WhatsApp
-</a>
+<a class="whatsapp-fab" href="https://wa.me/905323510731?text=Merhaba%2C%20CANS%20Sigorta%20hakkında%20bilgi%20almak%20istiyorum." aria-label="WhatsApp">WhatsApp</a>
 
-<!-- WhatsApp FAB — 2. hat -->
-<a class="whatsapp-fab" style="right:18px; bottom:74px"
-   href="https://wa.me/905522099443?text=Merhaba%2C%20CANS%20Sigorta%27dan%20bilgi%20ve%20teklif%20almak%20istiyorum."
-   rel="noopener" aria-label="WhatsApp 552">
-  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 3C9.372 3 4 8.372 4 15c0 2.12.55 4.12 1.51 5.87L4 29l8.33-1.45A11.88 11.88 0 0 0 16 27c6.628 0 12-5.372 12-12S22.628 3 16 3Z"/><path fill="#25D366" d="M16 5.2c5.4 0 9.8 4.4 9.8 9.8S21.4 24.8 16 24.8c-1.82 0-3.52-.5-4.98-1.37l-.35-.2-4.17.72.74-4.06-.23-.38A9.74 9.74 0 0 1 6.2 15c0-5.4 4.4-9.8 9.8-9.8Z"/></svg>
-  WhatsApp (552)
-</a>
-
-<!-- GA4 Event Tracking (WhatsApp/Telefon/E-posta) -->
 <script>
-  document.addEventListener('click', function(e){
-    const a = e.target.closest('a'); if(!a) return;
-    if (a.href.includes('wa.me') || a.href.startsWith('whatsapp://')) {
-      gtag('event', 'whatsapp_click', {link_url: a.href, location: window.location.pathname});
-    }
-    if (a.href.startsWith('tel:')) {
-      gtag('event', 'phone_click', {phone: a.href.replace('tel:', ''), location: window.location.pathname});
-    }
-    if (a.href.startsWith('mailto:')) {
-      gtag('event', 'email_click', {email: a.href.replace('mailto:', ''), location: window.location.pathname});
-    }
-  });
+  document.getElementById('yil').textContent=new Date().getFullYear();
 
-  // Hız: tüm görsellere lazy+async uygula (tek tek düzenlemeye gerek kalmasın)
-  document.querySelectorAll('img').forEach(function(img){
-    if (!img.hasAttribute('loading')) img.setAttribute('loading','lazy');
-    if (!img.hasAttribute('decoding')) img.setAttribute('decoding','async');
-  });
+  const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('reveal-on');});},{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
+
 </body>
 </html>
-
-
-
-
