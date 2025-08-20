@@ -1,36 +1,121 @@
-<!doctype html><html lang="tr"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hakkımızda | CANS Sigorta</title>
-<link rel="stylesheet" href="assets/style.css">
-</head><body>
-<header><div class="container nav">
-  <div class="brand"><a href="index.html">CANS Sigorta</a></div>
-  <div class="menu-toggle" onclick="document.querySelector('.menu').classList.toggle('open')">☰ Menü</div>
-  <nav class="menu">
-    <a href="index.html">Ana Sayfa</a><a href="bes.html">Emeklilik &amp; Hayat</a><a href="hayat.html">Hayat</a><a href="trafik.html">Trafik</a><a href="kasko.html">Kasko</a><a href="dask.html">DASK</a><a href="saglik.html">Sağlık</a><a class="active" href="about.html">Hakkımızda</a><a href="iletisim.html">İletişim</a>
-  </nav>
-</div></header>
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hakkımızda | CANS Sigorta</title>
+  <meta name="description" content="CANS Sigorta: Güven, şeffaflık ve müşteri memnuniyeti odaklı sigorta hizmetleri.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/assets/style.css">
 
-<section class="hero small"><div class="container">
-  <h1>Hakkımızda</h1>
-  <p class="lead">Tüm sigorta şirketleriyle çalışarak ihtiyaca göre en doğru teminat/fiyat dengesini sunarız.</p>
-</div></section>
+  <!-- OG -->
+  <meta property="og:url" content="https://www.canssigorta.com/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hakkımızda | CANS Sigorta">
+  <meta property="og:description" content="Güven, şeffaflık ve müşteri memnuniyeti odaklı sigorta hizmetleri.">
+  <meta property="og:image" content="https://www.canssigorta.com/assets/og-image.jpg">
 
-<section class="section"><div class="container">
-  <div class="grid">
-    <div>
-      <div class="card"><h3>Yaklaşımımız</h3>
-        <ul class="clean"><li>Karşılaştırmalı teklif</li><li>Hız: Aynı gün teklif &amp; poliçe</li><li>Şeffaflık: Poliçeyi kalem kalem açıklarız</li><li>Hasar yönetimi: Evrak ve süreç takibi</li></ul>
-      </div>
-      <div class="card" style="margin-top:12px"><h3>Değerlerimiz</h3><p>Güven, hız, şeffaflık ve sürdürülebilir memnuniyet.</p></div>
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0RM2J1V0X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date()); gtag('config', 'G-G0RM2J1V0X');
+  </script>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <img src="/assets/logo.png" alt="CANS Sigorta" style="height:40px">
+      <div class="word">CANS Sigorta</div>
     </div>
-    <div>
-      <div class="card"><h3>İletişim</h3><p>📞 <a href="tel:+905323510731">+90 532 351 0731</a><br>📞 <a href="tel:+905522099443">+90 552 209 9443</a><br>📧 <a href="mailto:can@canssigorta.com">can@canssigorta.com</a></p>
-      <a class="btn btn-primary" href="https://wa.me/905323510731?text=Merhaba%2C%20bilgi%20ve%20teklif%20istiyorum.">WhatsApp ile Yaz</a></div>
+    <div class="menu-toggle" onclick="document.querySelector('.menu').classList.toggle('open')">☰ Menü</div>
+    <nav class="menu">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="bes.html">Bireysel Emeklilik</a>
+      <a href="hayat.html">Hayat</a>
+      <a href="trafik.html">Trafik</a>
+      <a href="kasko.html">Kasko</a>
+      <a href="dask.html">DASK</a>
+      <a href="saglik.html">Sağlık</a>
+      <a class="active" href="about.html">Hakkımızda</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero-banner" style="--hero:url('/assets/hero-about.jpg')">
+  <div class="container">
+    <h1>Hakkımızda</h1>
+    <p>CANS Sigorta, bireylerin ve kurumların ihtiyaçlarına uygun çözümler sunan güvenilir bir sigorta acentesidir.</p>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="container">
+    <h2>Biz Kimiz?</h2>
+    <p>
+      CANS Sigorta, AgeSa Hayat ve Emeklilik’in yetkili acentesi olarak kurulmuştur. 
+      Müşterilerine bireysel emeklilikten hayat, sağlık, trafik, kasko ve DASK sigortasına kadar geniş bir ürün yelpazesi sunmaktadır.
+    </p>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="container">
+    <h2>Misyonumuz</h2>
+    <p>
+      İnsanların geleceğini güvence altına almak, finansal istikrar sağlamak ve sigortacılığı şeffaf, güvenilir ve anlaşılır hale getirmek.
+    </p>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="container">
+    <h2>Vizyonumuz</h2>
+    <p>
+      Sigorta sektöründe yenilikçi, dijital çözümler sunarak Türkiye’nin en güvenilir sigorta acentelerinden biri olmak.
+    </p>
+  </div>
+</section>
+
+<section class="section reveal team">
+  <div class="container">
+    <h2>Kurucular</h2>
+    <div class="cards two">
+      <div class="card">
+        <img src="/assets/team-hasim.jpg" alt="Haşim Can Yılmaz" style="border-radius:50%;width:120px">
+        <h3>Haşim Can Yılmaz</h3>
+        <p>Kurucu Ortak</p>
+      </div>
+      <div class="card">
+        <img src="/assets/team-ahmet.jpg" alt="Ahmet Can" style="border-radius:50%;width:120px">
+        <h3>Ahmet Can</h3>
+        <p>Kurucu Ortak</p>
+      </div>
     </div>
   </div>
-</div></section>
+</section>
 
-<footer><div class="container"><div class="contact">📞 <a href="tel:+905323510731">+90 532 351 0731</a> | 📞 <a href="tel:+905522099443">+90 552 209 9443</a> | 📧 <a href="mailto:can@canssigorta.com">can@canssigorta.com</a></div></div></footer>
-<a class="whatsapp-fab" href="https://wa.me/905323510731?text=Merhaba%2C%20CANS%20Sigorta%27dan%20bilgi%20ve%20teklif%20almak%20istiyorum." rel="noopener">WhatsApp</a>
-</body></html>
+<footer>
+  <div class="container">
+    <div class="contact">📞 <a href="tel:+905323510731">+90 532 351 0731</a>  |  📞 <a href="tel:+905522099443">+90 552 209 9443</a>  |  📧 <a href="mailto:can@canssigorta.com">can@canssigorta.com</a></div>
+    <div style="margin-top:8px;color:#888">© <span id="yil"></span> CANS Sigorta</div>
+  </div>
+</footer>
+
+<a class="whatsapp-fab" href="https://wa.me/905323510731?text=Merhaba%2C%20CANS%20Sigorta%20hakkinda%20bilgi%20almak%20istiyorum." aria-label="WhatsApp">WhatsApp</a>
+
+<script>
+  document.getElementById('yil').textContent=new Date().getFullYear();
+
+  const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('reveal-on');});},{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>
