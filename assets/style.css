@@ -1,63 +1,138 @@
+/* ========= CANS Sigorta — Tema ========= */
 :root{
-  --brand:#ff6a00; --bg:#0b0b0c; --card:#121316;
-  --text:#e7e9ee; --muted:#9aa3b2; --line:#1c1e22;
+  --brand:#ff6a00;        /* turuncu */
+  --brand-700:#e85f00;
+  --bg:#0b0b0c;           /* ana arka plan */
+  --card:#121316;         /* kart arka planı */
+  --text:#e7e9ee;         /* ana metin */
+  --muted:#9aa3b2;        /* ikincil metin */
+  --line:#1c1e22;         /* çizgiler */
+  --ok:#21c16b;           /* başarı */
+  --danger:#ef4444;       /* hata */
+  --focus:#4f46e5;        /* erişilebilir odak halkası */
 }
-*{box-sizing:border-box} html,body{margin:0;padding:0}
-body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;
+  background:var(--bg); color:var(--text);
+  text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+}
+img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
+a:focus,button:focus,input:focus,select:focus,textarea:focus{
+  outline:2px solid var(--focus); outline-offset:2px;
+}
+
+/* ====== Container ====== */
 .container{max-width:1200px;margin:0 auto;padding:24px}
 
-/* Header */
-header{position:sticky;top:0;z-index:50;background:rgba(11,11,12,.8);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between}
+/* ====== Header / Nav ====== */
+header{
+  position:sticky; top:0; z-index:50;
+  background:rgba(11,11,12,.85); backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line)
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
 .brand{display:flex;align-items:center;gap:12px}
-.brand img{height:40px;width:40px;object-fit:contain;display:block}
-.brand .word{font-weight:800;font-size:20px}
-.menu a{margin-left:18px;font-weight:600;opacity:.9}
+.brand img{height:40px;width:40px;object-fit:contain}
+.brand .word{font-weight:800;font-size:20px;letter-spacing:.2px}
+.menu a{margin-left:18px;font-weight:600;opacity:.92;transition:.2s}
 .menu a:hover{opacity:1;color:var(--brand)}
-.menu-toggle{display:none}
+.menu a.active{color:var(--brand)}
+.menu-toggle{display:none;color:#fff;border:1px solid var(--line);padding:8px 12px;border-radius:8px;background:#16171c}
+.menu-toggle:hover{filter:brightness(1.06)}
 @media (max-width:860px){
   .menu{display:none}
-  .menu.open{display:block;position:absolute;right:24px;top:64px;background:var(--card);padding:14px;border:1px solid var(--line);border-radius:10px}
+  .menu.open{
+    display:block; position:absolute; right:24px; top:64px;
+    background:var(--card); padding:14px; border:1px solid var(--line); border-radius:12px;
+    min-width:220px
+  }
   .menu a{display:block;margin:8px 6px}
   .menu-toggle{display:inline-flex;gap:8px;align-items:center;cursor:pointer}
 }
 
-/* Hero */
+/* ====== Hero ====== */
 .hero{padding:64px 0;text-align:center}
-.hero h1{font-size:42px;line-height:1.2;margin-bottom:14px}
+.hero h1{font-size:42px;line-height:1.2;margin:0 0 14px}
 .hero p{color:var(--muted);font-size:18px;max-width:760px;margin:0 auto 22px}
-.btn{display:inline-block;padding:14px 22px;border-radius:10px;font-weight:700}
+.hero.small{padding:36px 0 10px}       /* ALT SAYFALAR İÇİN */
+.hero.small h1{font-size:34px}
+.hero.small p{font-size:16px}
+
+/* ====== Buttons ====== */
+.btn{display:inline-block;padding:14px 22px;border-radius:10px;font-weight:700;transition:.2s;border:0}
 .btn-primary{background:var(--brand);color:#fff}
-.btn-primary:hover{opacity:.92}
+.btn-primary:hover{background:var(--brand-700)}
 .btn-ghost{background:#202228;border:1px solid var(--line);color:#fff}
+.btn-ghost:hover{filter:brightness(1.06)}
+.btn:disabled{opacity:.6;cursor:not-allowed}
 
-/* Sections */
+/* ====== Sections ====== */
 .section{padding:44px 0}
-.section h2{text-align:center;font-size:30px;margin-bottom:26px}
+.section h2{text-align:center;font-size:30px;margin:0 0 26px}
 
-/* Cards / grids */
+/* ====== Cards / Grids ====== */
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-.card{background:var(--card);padding:18px;border-radius:14px;border:1px solid var(--line);transition:.25s}
-.card:hover{transform:translateY(-4px);box-shadow:0 6px 16px rgba(0,0,0,.45)}
+.card{
+  background:var(--card); padding:18px; border-radius:14px; border:1px solid var(--line);
+  transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+.card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,.45);border-color:#2a2d33}
 .card h3{color:var(--brand);margin:6px 0 8px}
 .card p{color:var(--muted);font-size:14px;margin:0 0 12px}
+.cards .card .btn{margin-top:6px}
 
-/* Content pages */
+/* ====== Content pages ====== */
 .breadcrumb{color:var(--muted);font-size:14px;margin-bottom:8px}
 .lead{color:var(--muted);max-width:860px;margin:8px auto 20px}
 .grid{display:grid;grid-template-columns:2fr 1fr;gap:22px}
 @media (max-width:980px){.grid{grid-template-columns:1fr}}
+ul.clean{padding-left:18px;line-height:1.8;margin:6px 0}
+
+/* ====== Gallery ====== */
 .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.gallery img{width:100%;height:180px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}
+.gallery img{
+  width:100%;height:180px;object-fit:cover;border-radius:12px;border:1px solid var(--line);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.gallery img:hover{transform:scale(1.01);box-shadow:0 6px 18px rgba(0,0,0,.4)}
+@media (max-width:540px){.gallery{grid-template-columns:1fr}}
 
-/* Lists */
-ul.clean{padding-left:18px;line-height:1.8}
+/* ====== Forms (iletisim) ====== */
+input,select,textarea{
+  width:100%;background:#0f1115;color:#fff;border:1px solid var(--line);
+  border-radius:10px;padding:10px 12px;font-size:14px
+}
+textarea{resize:vertical}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:720px){.form-row{grid-template-columns:1fr}}
+.form-help{color:var(--muted);font-size:13px;margin-top:6px}
 
-/* Contact */
-.contact a{color:#fff}
-.info-list{line-height:1.9}
-.map{width:100%;height:320px;border:0;border-radius:12px;border:1px solid var(--line)}
+/* ====== Table (ileride fiyat tabloları için hazır) ====== */
+.table{
+  width:100%;border-collapse:separate;border-spacing:0 8px;font-size:14px
+}
+.table thead th{color:#cfd4dc;text-align:left;font-weight:700;padding:8px}
+.table tbody tr{background:var(--card);border:1px solid var(--line)}
+.table tbody td{padding:12px;border-top:1px solid var(--line)}
+.table tbody tr:first-child td{border-top-left-radius:10px;border-top-right-radius:10px}
+.table tbody tr:last-child td{border-bottom-left-radius:10px;border-bottom-right-radius:10px}
 
-/* Footer */
+/* ====== Utilities ====== */
+.badge{display:inline-block;border:1px solid var(--line);background:#1a1c22;color:#d5d8df;border-radius:999px;font-size:12px;padding:6px 10px}
+.center{text-align:center}
+.muted{color:var(--muted)}
+.hidden{display:none}
+
+/* ====== Footer ====== */
 footer{background:#111114;padding:28px 0;text-align:center;color:var(--muted);font-size:14px;margin-top:44px}
+.contact a{color:#fff}
+
+/* ====== Smooth scroll ====== */
+html{scroll-behavior:smooth}
+
+/* ====== Tiny fade-in (hoş bir giriş) ====== */
+@keyframes fadeInUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.hero, .cards .card, .gallery img {animation:fadeInUp .28s ease both}
