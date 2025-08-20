@@ -3,126 +3,94 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CANS Sigorta | Tüm Sigorta Şirketleriyle Çalışıyoruz</title>
-<meta name="description" content="Bireysel Emeklilik, Hayat Sigortası, Trafik, Kasko, DASK, Sağlık ve tüm elementer sigorta branşlarında profesyonel çözümler.">
+<title>CANS Sigorta | Geleceğinizi Finanse Edelim</title>
+<meta name="description" content="BES, Hayat, Trafik, Kasko, DASK, Sağlık ve daha fazlası. Karşılaştırmalı teklif, hızlı poliçe ve şeffaf danışmanlık.">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --brand:#ff6a00;
-    --bg:#0b0b0c;
-    --card:#121316;
-    --text:#e7e9ee;
-    --muted:#9aa3b2;
-    --accent:#ffffff;
-  }
-  *{box-sizing:border-box} html,body{margin:0;padding:0}
-  body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
-  a{color:inherit;text-decoration:none}
-  .container{max-width:1200px;margin:0 auto;padding:24px}
-  header{position:sticky;top:0;z-index:50;background:rgba(11,11,12,.8);backdrop-filter:blur(6px);border-bottom:1px solid #1c1e22}
-  .nav{display:flex;align-items:center;justify-content:space-between}
-  .brand{display:flex;align-items:center;gap:12px}
-  .brand img{height:40px;width:40px;object-fit:contain;display:block}
-  .brand .word{font-weight:800;font-size:20px}
-  .menu a{margin-left:18px;font-weight:600;opacity:.9}
-  .menu a:hover{opacity:1;color:var(--brand)}
-  .hero{padding:60px 0;text-align:center}
-  .hero h1{font-size:42px;line-height:1.2;margin-bottom:16px}
-  .hero p{color:var(--muted);font-size:18px;max-width:700px;margin:0 auto 20px}
-  .cta-btn{background:var(--brand);color:#fff;padding:14px 28px;border-radius:8px;font-weight:600;font-size:16px;display:inline-block}
-  .cta-btn:hover{opacity:0.9}
-  .section{padding:50px 0}
-  .section h2{text-align:center;font-size:32px;margin-bottom:40px}
-  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-  .card{background:var(--card);padding:24px;border-radius:12px;text-align:center;transition:0.3s}
-  .card:hover{transform:translateY(-4px);box-shadow:0 4px 12px rgba(0,0,0,0.4)}
-  .card h3{margin-bottom:12px;color:var(--brand)}
-  .card p{color:var(--muted);font-size:15px}
-  footer{background:#111114;padding:30px 0;text-align:center;color:var(--muted);font-size:14px;margin-top:40px}
-  .contact{margin-top:20px;font-size:16px;color:var(--accent)}
-</style>
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-
 <header>
   <div class="container nav">
     <div class="brand">
-      <img src="logo.png" alt="CANS Sigorta Logo">
-      <div class="word">CANS Sigorta</div>
+      <img src="assets/logo.png" alt="CANS Sigorta" onerror="this.remove();document.getElementById('brandText').style.marginLeft='0'">
+      <div id="brandText" class="word">CANS Sigorta</div>
     </div>
-    <div class="menu">
-      <a href="#emeklilik">Emeklilik & Hayat</a>
-      <a href="#elementer">Elementer Sigortalar</a>
-      <a href="#iletisim">İletişim</a>
-    </div>
+
+    <div class="menu-toggle" onclick="document.querySelector('.menu').classList.toggle('open')">☰ Menü</div>
+
+    <nav class="menu">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="bes.html">Emeklilik &amp; Hayat</a>
+      <a href="hayat.html">Hayat</a>
+      <a href="trafik.html">Trafik</a>
+      <a href="kasko.html">Kasko</a>
+      <a href="dask.html">DASK</a>
+      <a href="saglik.html">Sağlık</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
   </div>
 </header>
 
 <section class="hero">
   <div class="container">
-    <h1>Tüm Sigorta Şirketleriyle Çalışıyoruz</h1>
-    <p>Bireysel emeklilikten trafik sigortasına, tüm branşlarda yanınızdayız. Profesyonel danışmanlık ile en uygun çözümleri sunuyoruz.</p>
-    <a href="#iletisim" class="cta-btn">Hemen İletişime Geç</a>
+    <h1>Geleceğinizi Finanse Edelim</h1>
+    <p>Emeklilikten sağlığa, araç ve konuta kadar tüm branşlarda; karşılaştırmalı teklifler ve şeffaf danışmanlıkla yanınızdayız.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn-primary" href="https://wa.me/905323510731?text=Merhaba%2C%20CANS%20Sigorta%27dan%20bilgi%20ve%20teklif%20almak%20istiyorum." rel="noopener">Bizimle İletişime Geçin</a>
+      <a class="btn btn-ghost" href="iletisim.html">Tüm İletişim Kanalları</a>
+    </div>
   </div>
 </section>
 
-<section id="emeklilik" class="section">
+<section class="section">
   <div class="container">
-    <h2>Bireysel Emeklilik & Hayat Sigortası</h2>
+    <h2>Ürünlerimiz</h2>
     <div class="cards">
-      <div class="card">
+      <a class="card" href="bes.html">
         <h3>Bireysel Emeklilik Sistemi</h3>
-        <p>Geleceğinizi güvence altına alın, devlet katkısından faydalanın.</p>
-      </div>
-      <div class="card">
+        <p>%30 devlet katkısı ile birikiminizi büyütün.</p>
+        <span class="btn btn-primary">Detay</span>
+      </a>
+      <a class="card" href="hayat.html">
         <h3>Hayat Sigortası</h3>
-        <p>Sevdiklerinizi her koşulda koruma altına alın.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="elementer" class="section">
-  <div class="container">
-    <h2>Elementer Sigortalar</h2>
-    <div class="cards">
-      <div class="card">
+        <p>Sevdiklerinizi finansal risklere karşı koruyun.</p>
+        <span class="btn btn-primary">Detay</span>
+      </a>
+      <a class="card" href="trafik.html">
         <h3>Trafik Sigortası</h3>
-        <p>Zorunlu trafik sigortasında en uygun teklifleri sunuyoruz.</p>
-      </div>
-      <div class="card">
+        <p>Zorunlu sigortada uygun primler.</p>
+        <span class="btn btn-primary">Detay</span>
+      </a>
+      <a class="card" href="kasko.html">
         <h3>Kasko</h3>
-        <p>Aracınızı kaza, hırsızlık ve diğer risklere karşı güvence altına alın.</p>
-      </div>
-      <div class="card">
+        <p>Aracınıza kapsamlı güvence.</p>
+        <span class="btn btn-primary">Detay</span>
+      </a>
+      <a class="card" href="dask.html">
         <h3>DASK</h3>
-        <p>Zorunlu deprem sigortası ile evinizi koruyun.</p>
-      </div>
-      <div class="card">
+        <p>Deprem sonrası konut güvencesi.</p>
+        <span class="btn btn-primary">Detay</span>
+      </a>
+      <a class="card" href="saglik.html">
         <h3>Sağlık Sigortası</h3>
-        <p>Kendiniz ve aileniz için kapsamlı sağlık güvencesi.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="iletisim" class="section">
-  <div class="container" style="text-align:center">
-    <h2>İletişim</h2>
-    <div class="contact">
-      📞 +90 532 351 0731<br>
-      📞 +90 552 209 9443<br>
-      📧 <a href="mailto:can@canssigorta.com">can@canssigorta.com</a>
+        <p>Özel hastanelerde kapsamlı tedavi.</p>
+        <span class="btn btn-primary">Detay</span>
+      </a>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="container">
-    © 2025 CANS Sigorta — Tüm hakları saklıdır.
+    <div class="contact">
+      📞 <a href="tel:+905323510731">+90 532 351 0731</a> &nbsp; | &nbsp;
+      📞 <a href="tel:+905522099443">+90 552 209 9443</a> &nbsp; | &nbsp;
+      📧 <a href="mailto:can@canssigorta.com">can@canssigorta.com</a>
+    </div>
+    <div style="margin-top:8px;color:#888">© <span id="yil"></span> CANS Sigorta</div>
   </div>
 </footer>
-
+<script>document.getElementById('yil').textContent=new Date().getFullYear()</script>
 </body>
 </html>
